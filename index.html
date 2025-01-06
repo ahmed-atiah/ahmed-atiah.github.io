@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bob Balloons Game</title>
+    <title>Balloon Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="startButton" 
-        style="display: block; position: absolute; left: 20%; top: 40%; transform: translateY(-50%); padding: 10px 20px; font-size: 16px;">
-        Start Game
-    </button>
+    <!-- Main Menu -->
+    <div id="menu">
+        <h1>Balloon Game</h1>
+        <button id="startGameButton">Start Game</button>
+        <button id="settingsButton">Settings</button>
+        <button id="exitButton">Exit</button>
+    </div>
+
+    <!-- Settings Menu -->
+    <div id="settingsMenu" class="hidden">
+        <h2>Settings</h2>
+        <label for="languageSelect">Select Language:</label>
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="tr">Turkish</option>
+            <option value="ar">Arabic</option>
+        </select>
+        
+        <h3>Select Balloon Colors:</h3>
+        <div class="colorOptionWrapper">
+            <input type="checkbox" value="red" class="colorOption" id="colorRed">
+            <label for="colorRed">Red</label>
+        </div>
+        <div class="colorOptionWrapper">
+            <input type="checkbox" value="yellow" class="colorOption" id="colorYellow">
+            <label for="colorYellow">Yellow</label>
+        </div>
+        <div class="colorOptionWrapper">
+            <input type="checkbox" value="green" class="colorOption" id="colorGreen">
+            <label for="colorGreen">Green</label>
+        </div>
+        <div class="colorOptionWrapper">
+            <input type="checkbox" value="blue" class="colorOption" id="colorBlue">
+            <label for="colorBlue">Blue</label>
+        </div>
+        <div class="colorOptionWrapper">
+            <input type="checkbox" value="orange" class="colorOption" id="colorOrange">
+            <label for="colorOrange">Orange</label>
+        </div>
+        <div class="colorOptionWrapper">
+            <input type="checkbox" value="mixed" class="colorOption" id="colorMixed">
+            <label for="colorMixed">Mixed</label>
+        </div>
+        
+        <button id="applySettingsButton">Apply</button>
+        <button id="backToMenuButton">Back</button>
+    </div>
+
     <script src="game.js"></script>
 </body>
 </html>

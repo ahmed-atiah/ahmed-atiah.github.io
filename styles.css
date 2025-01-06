@@ -1,0 +1,62 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#menu, #settingsMenu {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#settingsMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the settings menu content horizontally */
+    justify-content: center; /* Centers the settings menu content vertically */
+    gap: 20px; /* Adds spacing between elements */
+}
+
+.colorOptionWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the checkbox and label horizontally */
+    gap: 10px; /* Adds spacing between the checkbox and label */
+    margin: 5px 0;
+    direction: ltr; /* Keeps the options in left-to-right order */
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid black;
+    max-width: 100%;
+    height: auto;
+}
